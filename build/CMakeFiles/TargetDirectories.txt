@@ -1,5 +1,0 @@
-/home/rohan-xono/spsc-ring-buffer/build/CMakeFiles/hello.dir
-/home/rohan-xono/spsc-ring-buffer/build/CMakeFiles/test_ring_buffer.dir
-/home/rohan-xono/spsc-ring-buffer/build/CMakeFiles/test_spsc_queue.dir
-/home/rohan-xono/spsc-ring-buffer/build/CMakeFiles/edit_cache.dir
-/home/rohan-xono/spsc-ring-buffer/build/CMakeFiles/rebuild_cache.dir
