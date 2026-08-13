@@ -30,3 +30,25 @@ target_link_libraries(
     PRIVATE
     spsc
 )
+
+add_executable(
+    test_ring_buffer
+    tests/test_ring_buffer.cpp
+)
+
+target_link_libraries(
+    test_ring_buffer
+    PRIVATE
+    spsc
+)
+
+add_executable(
+    test_spsc_queue
+    tests/test_spsc_queue.cpp
+)
+
+target_link_libraries(
+    test_spsc_queue
+    PRIVATE
+    spsc
+)

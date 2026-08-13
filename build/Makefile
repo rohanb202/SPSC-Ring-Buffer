@@ -129,6 +129,32 @@ hello/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/build
 .PHONY : hello/fast
 
+#=============================================================================
+# Target rules for targets named test_ring_buffer
+
+# Build rule for target.
+test_ring_buffer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_ring_buffer
+.PHONY : test_ring_buffer
+
+# fast build rule for target.
+test_ring_buffer/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ring_buffer.dir/build.make CMakeFiles/test_ring_buffer.dir/build
+.PHONY : test_ring_buffer/fast
+
+#=============================================================================
+# Target rules for targets named test_spsc_queue
+
+# Build rule for target.
+test_spsc_queue: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_spsc_queue
+.PHONY : test_spsc_queue
+
+# fast build rule for target.
+test_spsc_queue/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_spsc_queue.dir/build.make CMakeFiles/test_spsc_queue.dir/build
+.PHONY : test_spsc_queue/fast
+
 examples/hello.o: examples/hello.cpp.o
 .PHONY : examples/hello.o
 
@@ -153,6 +179,54 @@ examples/hello.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/examples/hello.cpp.s
 .PHONY : examples/hello.cpp.s
 
+tests/test_ring_buffer.o: tests/test_ring_buffer.cpp.o
+.PHONY : tests/test_ring_buffer.o
+
+# target to build an object file
+tests/test_ring_buffer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ring_buffer.dir/build.make CMakeFiles/test_ring_buffer.dir/tests/test_ring_buffer.cpp.o
+.PHONY : tests/test_ring_buffer.cpp.o
+
+tests/test_ring_buffer.i: tests/test_ring_buffer.cpp.i
+.PHONY : tests/test_ring_buffer.i
+
+# target to preprocess a source file
+tests/test_ring_buffer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ring_buffer.dir/build.make CMakeFiles/test_ring_buffer.dir/tests/test_ring_buffer.cpp.i
+.PHONY : tests/test_ring_buffer.cpp.i
+
+tests/test_ring_buffer.s: tests/test_ring_buffer.cpp.s
+.PHONY : tests/test_ring_buffer.s
+
+# target to generate assembly for a file
+tests/test_ring_buffer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ring_buffer.dir/build.make CMakeFiles/test_ring_buffer.dir/tests/test_ring_buffer.cpp.s
+.PHONY : tests/test_ring_buffer.cpp.s
+
+tests/test_spsc_queue.o: tests/test_spsc_queue.cpp.o
+.PHONY : tests/test_spsc_queue.o
+
+# target to build an object file
+tests/test_spsc_queue.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_spsc_queue.dir/build.make CMakeFiles/test_spsc_queue.dir/tests/test_spsc_queue.cpp.o
+.PHONY : tests/test_spsc_queue.cpp.o
+
+tests/test_spsc_queue.i: tests/test_spsc_queue.cpp.i
+.PHONY : tests/test_spsc_queue.i
+
+# target to preprocess a source file
+tests/test_spsc_queue.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_spsc_queue.dir/build.make CMakeFiles/test_spsc_queue.dir/tests/test_spsc_queue.cpp.i
+.PHONY : tests/test_spsc_queue.cpp.i
+
+tests/test_spsc_queue.s: tests/test_spsc_queue.cpp.s
+.PHONY : tests/test_spsc_queue.s
+
+# target to generate assembly for a file
+tests/test_spsc_queue.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_spsc_queue.dir/build.make CMakeFiles/test_spsc_queue.dir/tests/test_spsc_queue.cpp.s
+.PHONY : tests/test_spsc_queue.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,9 +236,17 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... hello"
+	@echo "... test_ring_buffer"
+	@echo "... test_spsc_queue"
 	@echo "... examples/hello.o"
 	@echo "... examples/hello.i"
 	@echo "... examples/hello.s"
+	@echo "... tests/test_ring_buffer.o"
+	@echo "... tests/test_ring_buffer.i"
+	@echo "... tests/test_ring_buffer.s"
+	@echo "... tests/test_spsc_queue.o"
+	@echo "... tests/test_spsc_queue.i"
+	@echo "... tests/test_spsc_queue.s"
 .PHONY : help
 
 
